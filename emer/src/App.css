@@ -1,0 +1,108 @@
+/* Prabhu Furnitures - Custom Styles */
+
+* {
+    scroll-behavior: smooth;
+}
+
+.App {
+    overflow-x: hidden;
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Button Hover Effects */
+button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Card Hover Effects */
+.group:hover {
+    transform: translateY(-4px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f5dc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8b4513;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a0522d;
+}
+
+/* Glass Morphism Effect */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Text Selection */
+::selection {
+    background-color: #8b4513;
+    color: white;
+}
+
+/* Focus Styles */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #8b4513;
+    box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+}
+
+/* Smooth Image Loading */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img:not([src]) {
+    opacity: 0;
+}
+
+/* Link Hover Effect */
+a {
+    transition: color 0.2s ease;
+}
+
+/* Ensure proper spacing */
+section {
+    position: relative;
+}
+
+/* Remove default button styles */
+button {
+    font-family: inherit;
+}
