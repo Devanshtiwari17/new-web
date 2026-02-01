@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "./firebase";
+import { db } from "./firebase.js";
+
 
 import Header from "./components/Header";
 import Hero from "./components/Hero";
